@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+
+font-family:Arial, sans-serif;
+
+background:#f5f7fa;
+
+color:#333;
+
+line-height:1.6;
+
+}
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+header{
+
+background:#fd810d;
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+}
+.hero-image{
+
+width:100%;
+
+max-width:900px;
+
+display:block;
+
+margin:40px auto;
+
+border-radius:12px;
+
+}
+section{
+
+background:white;
+
+padding:30px;
+
+margin:30px auto;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+/* ===========================
+   Section Headings
+=========================== */
+
+section h2{
+
+    color:#fd810d;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===========================
+   Lists
+=========================== */
+
+ul,
+ol{
+
+    padding-left:25px;
+
+}
+
+li{
+
+    margin-bottom:12px;
+
+}
+
+
+/* ===========================
+   Form
+=========================== */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+
+/* ===========================
+   Labels
+=========================== */
+
+label{
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+
+/* ===========================
+   Inputs
+=========================== */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+
+/* Remove textarea resize */
+textarea{
+
+    resize:none;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+button{
+
+    background:#fd810d;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+/* Hover Effect */
+
+button:hover{
+
+    background:#fd810d;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#fd810d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+.hero-image{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:40px auto;
+
+    border-radius:12px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.2);
+
+}
+
+
+.features{
+
+display:flex;
+flex-direction: column;
+
+gap:20px;
+
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width:768px){
+
+    header{
+
+        padding:25px;
+
+    }
+
+    section{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+}
