@@ -27,11 +27,11 @@ should remove "banana".
 
 --- */
 
-const inventory = {
-  apple: 15,
-  banana: 8,
-  orange: 20
-};
+// const inventory = {
+//   apple: 15,
+//   banana: 8,
+//   orange: 20
+// };
 
 //Write a function that Adds a new item if it doesn't exist.
 
@@ -53,11 +53,11 @@ addNewItem("strawberry", 90);
 
 //Updates the quantity if it already exists.
 
-const inventory = {
-  apple: 15,
-  banana: 8,
-  orange: 20
-};
+// const inventory = {
+//   apple: 15,
+//   banana: 8,
+//   orange: 20
+// };
 
 function updateInventory(item, quantity) {
 

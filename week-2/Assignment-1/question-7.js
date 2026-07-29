@@ -61,5 +61,5 @@ const grouped = students.reduce((result,student)=>{
 
 },{});
 
-console.log(grouped);
+console.log(grouped);  //try using concept of map
 

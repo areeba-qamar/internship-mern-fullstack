@@ -85,8 +85,9 @@ console.log(totalSalary);
 //3. Create an array containing only employee names.
 
 const names = companies
-.flatMap(company => company.employees)     //map() would return a nested array because each company has 
-.map(employee => employee.name);           //its own employees array. flatMap() first maps the employees and then flattens the result into a single array, making it easier to process all employees together.
+.flatMap(company => company.employees)     //map() would return a nested array because each company has its own employees array. 
+.map(employee => employee.name);            //flatMap() first maps the employees and then flattens the result into a single array, 
+                                            //making it easier to process all employees together.
 
 console.log(names);
 
