@@ -25,6 +25,8 @@ async function getUsers() {
 
 }
 
+getUsers();
+
 //POST request : to send data to the server
 
 async function createUser() {
@@ -59,8 +61,8 @@ JSON
 
 
 
-JSON.parse(data);
-JSON.stringify(user);
+// JSON.parse(data);
+// JSON.stringify(user);
 
 /*
 ==========
@@ -101,14 +103,42 @@ Internal Server Error
 ERROR HANDLING
 ==========================================*/
 
-try{
+// try{
 
-const data=await fetch(url);
+// const data=await fetch(url);
+
+// }
+
+// catch(error){
+
+// console.log(error);
+
+// }
+
+//Example:
+
+/*==========================================
+ERROR HANDLING
+==========================================*/
+
+async function fetchData() {
+
+    try {
+
+        const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+
+        const data = await response.json();
+
+        console.log(data);
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
 
 }
 
-catch(error){
-
-console.log(error);
-
-}
+fetchData();
