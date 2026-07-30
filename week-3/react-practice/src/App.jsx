@@ -1,14 +1,30 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
+import About from "./components/About";
+
+
 function App() {
   return (
     <>
-      <h1>Hello, Areeba! 👋</h1>
 
-      <p>
-        Welcome to Week 3 of MERN.
-        Hope you are done with your 1st part of Week 3!
-        <br />
-        Hurrayyy! Let's move on to the next part.
-      </p>
+    <>
+   <header>
+      <Header />
+   </header>
+
+   <main>
+      <Hero />
+      <About />
+      <Services />
+   </main>
+
+   <footer>
+      <Footer />
+   </footer>
+</>
+      
     </>
   );
 }
