@@ -1,5 +1,10 @@
-function Hero() {
-  return <h1>A Gateway to technical Solutions.</h1>;
+function Hero(props) {
+  return( <section>
+    <h1>{props.title}</h1>
+    <p>{props.subtitle}</p>
+    <button>{props.buttonText}</button>
+    </section>
+    );
 }
 
 export default Hero;

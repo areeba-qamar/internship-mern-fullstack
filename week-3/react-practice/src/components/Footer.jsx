@@ -1,6 +1,8 @@
-function Footer() {
+function Footer(props) {
   return (
-    <p>© 2026 Areeba Qamar | Built with React + Vite</p>
+    <footer>
+      <p>© {props.year} {props.author} </p>
+    </footer>
   );
 }
 export default Footer;

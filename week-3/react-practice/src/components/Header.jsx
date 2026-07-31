@@ -1,11 +1,13 @@
-function Header() {
+function Header(props) {
   return (
-    <>
-      <h1>DevGate</h1>
+    <header>
+      <h2>{props.logo}</h2>
       <nav>
-        Home | About | Services | Contact
+        <a href="#">{props.nav1}</a> |{" "}
+        <a href="#">{props.nav2}</a> |{" "}
+        <a href="#">{props.nav3}</a>
       </nav>
-    </>
+    </header>
   );
 }
 export default Header;

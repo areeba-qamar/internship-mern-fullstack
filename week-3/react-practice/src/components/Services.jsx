@@ -1,26 +1,16 @@
-function Services() {
+function Services(props) {
   return (
-    <section className="services">
-      <h2>Technologies I'm Learning</h2>
+    <section>
+      <h2>{props.title}</h2>
 
-      <div className="service-container">
+      <ul>
+        <li>{props.service1}</li>
+        <li>{props.service2}</li>
+        <li>{props.service3}</li>
+        <li>{props.service4}</li>
+      </ul>
 
-        <div className="service-card">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React</p>
-        </div>
-
-        <div className="service-card">
-          <h3>Backend</h3>
-          <p>Node.js & Express.js</p>
-        </div>
-
-        <div className="service-card">
-          <h3>Database</h3>
-          <p>MongoDB</p>
-        </div>
-
-      </div>
+      
     </section>
   );
 }

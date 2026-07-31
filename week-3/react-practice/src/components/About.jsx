@@ -1,11 +1,11 @@
-function About() {
+function About(props) {
   return (
-    <section className="about">
-      <h2>About This Project</h2>
+    <section>
+      <h2>{props.heading}</h2>
+
 
       <p>
-        This project documents my MERN Stack internship
-        journey.
+        {props.description}
       </p>
     </section>
   );

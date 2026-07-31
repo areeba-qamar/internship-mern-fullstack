@@ -10,18 +10,36 @@ function App() {
     <>
 
     <>
-   <header>
-      <Header />
-   </header>
+   <Header
+        logo="DevGate"
+        nav1="Home"
+        nav2="About"
+        nav3="Topics"
+      />
 
    <main>
-      <Hero />
-      <About />
-      <Services />
+       <Hero
+        title="MERN Stack Internship Journey"
+        subtitle="Learning React one component at a time."
+        buttonText="Explore Learning"
+      />
+      <About
+        heading="About This Journey"
+        description="This project showcases my MERN Stack internship progress using React."
+      />
+      <Services
+        title="Topics Covered"
+        service1="React Components"
+        service2="JSX"
+        service3="Props"
+      />
    </main>
 
    <footer>
-      <Footer />
+      <Footer
+        author="Areeba Qamar"
+        year={2026}
+      />
    </footer>
 </>
       
