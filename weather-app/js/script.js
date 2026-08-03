@@ -1,51 +1,54 @@
+//first of all make connections (DOM selection)
 
-const button = document.querySelector("button");
-const cityInput = document.querySelector("#city");
+const form = document.querySelector("#weather-form")
+const cityInput = document.querySelector("#city-input")
 
-button.addEventListener("click" , getWeather)
-//form.addEventListener("submit", getWeather);
+const cityName = document.querySelector("#city-name")
+const temprature = document.querySelector("#temperature")
+const description = document.querySelector("#description")
 
+const feelsLike = document.querySelector("#feels-like");
+const humidity = document.querySelector("#humidity");
+const windSpeed = document.querySelector("#wind-speed");
+
+// Just to verify everything is selected
+console.log(form);
+console.log(cityInput);
+console.log(cityName);
+
+//Api Key from open weather
 
 const API_KEY = "f6ada2b289f04c0605b24cf559331d7e";
 
+// Lets detect wheather the form is submitting or not
+
+form.addEventListener("submit", function (event) {
+
+    // To prevent the loss of data after page refresh 
+
+    event.preventDefault();
+
+    console.log("Search button clicked!");
+
+    //put the input value in a new variable which we will use later.
+
+    const city = cityInput.value.trim()
+
+    console.log (city)
+
+    getWeather(city);
+
+});
 
 
-async function getWeather() {
 
-    const city = cityInput.value;
+async function getWeather(city){
 
+    console.log("Fetching weather for:", city);
 
-  try {
+//     const response = await fetch(
+//       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+//     );
 
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-    );
-
-        //   console.log(response.status);
-        //   console.log(response.ok);
-
-    if (!response.ok) {
-      throw new Error("Unable to fetch weather data.");
-    }
-
-    
-
-    const data = await response.json();
-
-    console.log("===== Weather Report =====");
-    console.log(`City        : ${data.name}`);
-    console.log(`Temperature : ${data.main.temp} °C`);
-    console.log(`Humidity    : ${data.main.humidity}%`);
-    console.log(`Weather     : ${data.weather[0].main}`);
-    console.log(`Description : ${data.weather[0].description}`);
-    console.log(`Wind Speed  : ${data.wind.speed} m/s`);
-
-  }
-
-  catch (error) {
-
-    console.log(error.message);
-
-  }
 
 }

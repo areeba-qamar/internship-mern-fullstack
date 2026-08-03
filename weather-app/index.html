@@ -26,7 +26,7 @@
 
         <input
           type="text"
-          id="city"
+          id="city-input"
           placeholder="Enter city name..."
           required
         >
@@ -40,16 +40,24 @@
 <!-- Weather Card -->
     <section class="weather-card">
 
-     <h2 id="city-name">Islamabad</h2>
+     <h2 id="city-name">City</h2>
      <h3 id="temperature">34°C</h3>
-     <p id=""description>Clear Sky</p>
+     <p id="description">Weather Description</p>
 
       <div class="weather-details">
-        <p><strong>Feels Like:</strong> <span id="feels-like">34°C</span></p>   <!--here strong is make the text bold  -->
-        <p><strong>Humidity:</strong> <span id="humidity">55%</span></p>            <!--The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element. In-short its an in-line container make styling easy.-->
-        <p><strong>Wind Speed:</strong> <span id="wind-speed">10 km/h</span></p>
+        <p><strong>Feels Like:</strong>
+           <span id="feels-like">--C</span>
+        </p>                                          <!--here strong is make the text bold  -->
+        <p><strong>Humidity:</strong> 
+          <span id="humidity">--%</span>
+        </p>                                          <!--The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element. In-short its an in-line container make styling easy.-->
+        <p><strong>Wind Speed:</strong> 
+          <span id="wind-speed">--km/h</span>
+        </p>
       </div>
     </section>
+
+</main>
 
         <script src="./js/script.js"></script>
 
