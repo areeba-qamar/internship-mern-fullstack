@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title> Weather app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main class="weather-container">
+    <h1>🌤 Weather App</h1>
+
+<!-- Search Section -->
+    <section class="search-section">
+
+      <form id="weather-form">
+
+        <input
+          type="text"
+          id="city"
+          placeholder="Enter city name..."
+          required
+        >
+
+        <button type="submit">
+          Search
+        </button>
+</form>
+</section>
+
+<!-- Weather Card -->
+    <section class="weather-card">
+
+     <h2 id="city-name">Islamabad</h2>
+     <h3 id="temperature">34°C</h3>
+     <p id=""description>Clear Sky</p>
+
+      <div class="weather-details">
+        <p><strong>Feels Like:</strong> <span id="feels-like">34°C</span></p>   <!--here strong is make the text bold  -->
+        <p><strong>Humidity:</strong> <span id="humidity">55%</span></p>            <!--The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element. In-short its an in-line container make styling easy.-->
+        <p><strong>Wind Speed:</strong> <span id="wind-speed">10 km/h</span></p>
+      </div>
+    </section>
+
+        <script src="./js/script.js"></script>
+
+
+</body>
+</html>
