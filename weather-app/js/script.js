@@ -46,9 +46,25 @@ async function getWeather(city){
 
     console.log("Fetching weather for:", city);
 
-//     const response = await fetch(
-//       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-//     );
+// Now fetch the data by api call 
 
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+    );
+    const data = await response.json()
+
+    console.log(data)
+
+//After successfully fetching data from open weather using their Api , now map that data elements to your own html data elements.
+
+cityName.textContent = data.name;
+temperature.textContent = `${data.main.temp}°C`;
+description.textContent = data.weather[0].description;
+
+feelsLike.textContent = `${data.main.feels_like}°C`;
+humidity.textContent = `${data.main.humidity}%`;
+windSpeed.textContent = `${data.wind.speed} m/s`;
 
 }
+
+//Yayyy mapping done , output is visible on UI !
