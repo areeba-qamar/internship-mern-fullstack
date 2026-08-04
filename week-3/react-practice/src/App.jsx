@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import About from "./components/About";
+import CurrentFocus from "./components/CurrentFocus";
 
 
 function App() {
@@ -34,6 +35,14 @@ function App() {
         service3="Accessing props"
         service4="Props as an object"
       />
+
+      <CurrentFocus
+      week="Week 3"
+      technology="React"
+      lesson="Props Destructuring"
+      goal="Build reusable components"
+      />
+      
    </main>
 
    <footer>

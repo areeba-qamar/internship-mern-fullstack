@@ -122,6 +122,49 @@ header {
 }
 
 /* ==========================
+   Current Focus
+========================== */
+
+.currentfocus{
+    padding:60px 20px;
+    background:#f5f7fb;
+    text-align:center;
+}
+
+.currentfocus h1{
+    color:#0b132b;
+    margin-bottom:25px;
+}
+
+.currentfocus ul{
+    list-style:none;
+    max-width:500px;
+    margin:0 auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.currentfocus li{
+    padding:12px 0;
+    border-bottom:1px solid #e5e5e5;
+    color:#444;
+    font-size:18px;
+}
+
+.currentfocus li:last-child{
+    border-bottom:none;
+}
+
+.currentfocus strong{
+    color:#0b132b;
+}
+/* ==========================
    Footer
 ========================== */
 
