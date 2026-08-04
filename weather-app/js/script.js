@@ -11,6 +11,8 @@ const feelsLike = document.querySelector("#feels-like");
 const humidity = document.querySelector("#humidity");
 const windSpeed = document.querySelector("#wind-speed");
 
+const weatherIcon = document.querySelector("#weather-icon");
+
 // Just to verify everything is selected
 console.log(form);
 console.log(cityInput);
@@ -56,7 +58,7 @@ async function getWeather(city){
     console.log(data)
 
 //After successfully fetching data from open weather using their Api , now map that data elements to your own html data elements.
-
+const weather = data.weather[0].main;
 cityName.textContent = data.name;
 temperature.textContent = `${data.main.temp}°C`;
 description.textContent = data.weather[0].description;
@@ -65,6 +67,24 @@ feelsLike.textContent = `${data.main.feels_like}°C`;
 humidity.textContent = `${data.main.humidity}%`;
 windSpeed.textContent = `${data.wind.speed} m/s`;
 
+if (weather === "Clear") {
+    weatherIcon.src = "./assets/images/icon-sunny.webp";
+}
+else if (weather === "Clouds") {
+    weatherIcon.src = "./assets/images/icon-overcast.webp";
+}
+else if (weather === "Rain") {
+    weatherIcon.src = "./assets/images/icon-rain.webp";
+}
+else if (weather === "Snow") {
+    weatherIcon.src = "./assets/images/icon-snow.webp";
+}
+else {
+    weatherIcon.src = "./assets/images/icon-partly-cloudy.webp";
+}
 }
 
 //Yayyy mapping done , output is visible on UI !
+
+
+getWeather("Islamabad"); //It will show islamabad's weather by default.
