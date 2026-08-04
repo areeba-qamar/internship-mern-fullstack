@@ -29,9 +29,10 @@ function App() {
       />
       <Services
         title="Topics Covered"
-        service1="React Components"
-        service2="JSX"
-        service3="Props"
+        service1="Props"
+        service2="Receiving Props"
+        service3="Accessing props"
+        service4="Props as an object"
       />
    </main>
 
