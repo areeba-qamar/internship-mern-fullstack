@@ -34,7 +34,7 @@ form.addEventListener("submit", function (event) {
 
     //put the input value in a new variable which we will use later.
 
-    const city = cityInput.value.trim()
+    const city = cityInput.value.trim()   // .trim() to clean the input and ready to use : remove extra space at start and the end.
 
     console.log (city)
 

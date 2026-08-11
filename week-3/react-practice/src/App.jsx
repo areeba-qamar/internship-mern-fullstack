@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import About from "./components/About";
 import CurrentFocus from "./components/CurrentFocus";
+import SectionContainer from "./components/SectionContainer";
 
 
 function App() {
@@ -42,6 +43,17 @@ function App() {
       lesson="Props Destructuring"
       goal="Build reusable components"
       />
+
+       <SectionContainer>
+       <h2>Current Focus</h2>
+       <p>Learning React Props & Children</p>
+       </SectionContainer>
+
+       <SectionContainer>
+       <h2>My Services</h2>
+       <p>Frontend Development</p>
+       </SectionContainer>
+      
       
    </main>
 
