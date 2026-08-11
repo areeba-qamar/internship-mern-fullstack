@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import About from "./components/About";
 import CurrentFocus from "./components/CurrentFocus";
 import SectionContainer from "./components/SectionContainer";
+import LearningCard from "./components/LearningCards";
 
 
 function App() {
@@ -53,6 +54,30 @@ function App() {
        <h2>My Services</h2>
        <p>Frontend Development</p>
        </SectionContainer>
+
+      <section className="learning-section">
+
+        <h1>My Learning</h1>
+
+       <LearningCard
+        week={`Week ${1}`}
+        topic="HTML & CSS"
+        status="Completed"
+        />
+
+        <LearningCard
+        week={`Week ${2}`}
+        topic="Java Script"
+        status="Completed"
+        />
+
+        <LearningCard
+        week={`Week ${3}`}
+        topic="React"
+        status="In-progress"
+        />
+
+      </section>
       
       
    </main>
