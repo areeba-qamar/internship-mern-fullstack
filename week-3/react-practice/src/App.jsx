@@ -6,7 +6,7 @@ import About from "./components/About";
 import CurrentFocus from "./components/CurrentFocus";
 import SectionContainer from "./components/SectionContainer";
 import LearningCard from "./components/LearningCards";
-
+import Section from "./components/Section";
 
 function App() {
   return (
@@ -78,6 +78,23 @@ function App() {
         />
 
       </section>
+       
+      
+      <Section
+        title="Current Focus"
+       description="I am currently learning React and building reusable components."
+      >
+        <h3>What I'm Practicing</h3>
+        <ul>
+        <li>Props</li>
+        <li>Props Destructuring</li>
+        <li>Children Prop</li>
+        </ul>
+     </Section>
+
+     <Section title="Remaining Topics" description="Backend is next">
+     <p>Node.js and Express.js</p>
+     </Section>
       
       
    </main>
