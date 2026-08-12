@@ -11,6 +11,7 @@ import Counter from "./components/Counter";
 import NameInput from "./components/NameInput";
 import Toggle from "./components/Toggle";
 import StudentProfile from "./components/StudentProfile";
+import TaskList from "./components/TaskList";
 
 
 function App() {
@@ -111,6 +112,8 @@ function App() {
        <Toggle/>
 
        <StudentProfile/>
+
+       <TaskList/>
       
       
    </main>
