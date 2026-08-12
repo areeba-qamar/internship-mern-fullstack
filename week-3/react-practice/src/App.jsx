@@ -9,7 +9,7 @@ import LearningCard from "./components/LearningCards";
 import Section from "./components/Section";
 import Counter from "./components/Counter";
 import NameInput from "./components/NameInput";
-
+import Toggle from "./components/Toggle";
 function App() {
   return (
     <>
@@ -104,6 +104,8 @@ function App() {
        entername = "Enter your Name below : "
        enteremail= "Enter your e-mail below : "
        />
+
+       <Toggle/>
       
       
    </main>
