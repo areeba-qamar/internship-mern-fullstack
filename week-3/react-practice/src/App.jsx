@@ -10,6 +10,9 @@ import Section from "./components/Section";
 import Counter from "./components/Counter";
 import NameInput from "./components/NameInput";
 import Toggle from "./components/Toggle";
+import StudentProfile from "./components/StudentProfile";
+
+
 function App() {
   return (
     <>
@@ -106,6 +109,8 @@ function App() {
        />
 
        <Toggle/>
+
+       <StudentProfile/>
       
       
    </main>
