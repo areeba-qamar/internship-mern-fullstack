@@ -7,6 +7,7 @@ import CurrentFocus from "./components/CurrentFocus";
 import SectionContainer from "./components/SectionContainer";
 import LearningCard from "./components/LearningCards";
 import Section from "./components/Section";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -95,6 +96,8 @@ function App() {
      <Section title="Remaining Topics" description="Backend is next">
      <p>Node.js and Express.js</p>
      </Section>
+
+      <Counter />
       
       
    </main>
