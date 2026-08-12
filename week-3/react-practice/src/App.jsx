@@ -8,6 +8,7 @@ import SectionContainer from "./components/SectionContainer";
 import LearningCard from "./components/LearningCards";
 import Section from "./components/Section";
 import Counter from "./components/Counter";
+import NameInput from "./components/NameInput";
 
 function App() {
   return (
@@ -98,6 +99,10 @@ function App() {
      </Section>
 
       <Counter />
+
+      <NameInput 
+       description = "Enter your Name below : "
+       />
       
       
    </main>
