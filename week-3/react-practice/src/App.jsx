@@ -13,9 +13,14 @@ import Toggle from "./components/Toggle";
 import StudentProfile from "./components/StudentProfile";
 import TaskList from "./components/TaskList";
 import StudySession from "./components/StudySessions";
-
+import GoalDisplay from "./components/GoalDisplay";
+import GoalInput from "./components/GoalInput";
+import { useState } from "react";
 
 function App() {
+
+        const [goal, setGoal] = useState("");  {/* put the state in parent App.jsx : lifting state up */}
+
   return (
     <>
 
@@ -117,7 +122,9 @@ function App() {
        <TaskList/>
 
        <StudySession/>
-      
+
+      <GoalInput goal={goal} setGoal={setGoal} />
+      <GoalDisplay goal={goal} />
       
    </main>
 
