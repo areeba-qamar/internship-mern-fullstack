@@ -101,7 +101,8 @@ function App() {
       <Counter />
 
       <NameInput 
-       description = "Enter your Name below : "
+       entername = "Enter your Name below : "
+       enteremail= "Enter your e-mail below : "
        />
       
       
@@ -114,7 +115,6 @@ function App() {
       />
    </footer>
 </>
-      
     </>
   );
 }
