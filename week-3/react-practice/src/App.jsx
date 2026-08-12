@@ -12,6 +12,7 @@ import NameInput from "./components/NameInput";
 import Toggle from "./components/Toggle";
 import StudentProfile from "./components/StudentProfile";
 import TaskList from "./components/TaskList";
+import StudySession from "./components/StudySessions";
 
 
 function App() {
@@ -114,6 +115,8 @@ function App() {
        <StudentProfile/>
 
        <TaskList/>
+
+       <StudySession/>
       
       
    </main>
