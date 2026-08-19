@@ -1,10 +1,9 @@
-function SearchForm() {
+function WeatherCard() {
   return (
-    <form>
-      <input placeholder="Enter city" />
-      <button type="submit">Search</button>
-    </form>
+    <div>
+      <h2>Weather</h2>
+    </div>
   );
 }
 
-export default SearchForm;
+export default WeatherCard;

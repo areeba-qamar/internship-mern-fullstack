@@ -1,9 +1,9 @@
-function WeatherDetails() {
+function Card({ children }) {
   return (
-    <div>
-      <p>Weather details</p>
+    <div className="rounded-xl p-6 shadow-lg">
+      {children}
     </div>
   );
 }
 
-export default WeatherDetails;
+export default Card;
