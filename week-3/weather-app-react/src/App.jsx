@@ -21,6 +21,9 @@ function App() {
       return;
     }
 
+    const controller = new AbortController();
+
+
     const fetchWeather = async () => {
 
       try {
@@ -30,7 +33,9 @@ function App() {
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
             city
-          )}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&units=metric`
+          )}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&units=metric`,
+          { signal: controller.signal }          
+
         );
 
         if (!response.ok) {
@@ -44,8 +49,10 @@ function App() {
         setWeather(data);
 
       } catch (error) {
+        if (error.name !== "AbortError") {  
         setError(error.message);
         setWeather(null);
+        }
 
       } finally {
         setLoading(false);
@@ -54,12 +61,16 @@ function App() {
 
     fetchWeather();
 
+    return () => {                           
+      controller.abort();
+
+    };
 
   }, [city]);
 
  return (
   <div className="min-h-screen bg-slate-900 text-white px-4 py-10">
-    <div div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-center">
         Weather Dashboard 🌦️
       </h1>
