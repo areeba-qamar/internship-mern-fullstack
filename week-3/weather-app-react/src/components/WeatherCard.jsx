@@ -11,6 +11,12 @@ function WeatherCard({weather}) {
           {weather.name}, {weather.sys.country}
         </h2>
 
+        <img
+           src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+           alt={weather.weather[0].description}
+           className="mx-auto"
+        />
+
         <p className="text-5xl font-bold mt-4">
           {Math.round(weather.main.temp)}°C
         </p>
