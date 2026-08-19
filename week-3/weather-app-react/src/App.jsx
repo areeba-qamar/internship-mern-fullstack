@@ -57,31 +57,37 @@ function App() {
 
   }, [city]);
 
-
-  return (
-    <div className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-centre">
+ return (
+  <div className="min-h-screen bg-slate-900 text-white px-4 py-10">
+    <div div className="max-w-3xl mx-auto">
+      <h1 className="text-4xl md:text-5xl font-bold text-center">
         Weather Dashboard 🌦️
       </h1>
+
+      <p className="text-center text-slate-400 mt-3">
+        Search for a city to see its current weather
+      </p>
       
       <SearchForm onSearch={handleSearch}/>
       {loading && (
-        <p className="text-center mt-8">
-          Loading weather...
-        </p>
+        <div className="text-center mt-10">
+         <p className="text-lg">
+          Fetching weather data....
+         </p>
+       </div>
       )}
 
       {error && (
-        <p className="text-center mt-8 text-red-500">
+        <div className="max-w-md mx-auto mt-8 bg-red-900/40 border border-red-500 rounded-xl p-4 text-center">
           {error}
-        </p>
+        </div>
       )}
 
-       {weather && (
+       {weather && !loading && (
         <WeatherCard weather={weather} />
       )}
-
     </div>
+  </div>
   );
 }
 
